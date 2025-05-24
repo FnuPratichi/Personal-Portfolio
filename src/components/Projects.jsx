@@ -32,14 +32,15 @@ const Projects = () => {
       description:
         'Implemented a distributed event-based architecture using Kafka and microservices for order, notification, transaction, and analytics handling.',
       link: 'https://github.com/FnuPratichi/Distributed-Event-Based-Architecture-in-Python',
-      images: ['/event.png'], 
+      images: [process.env.PUBLIC_URL + '/event.png']
+
     },
     {
       title: 'Full-Stack E-Commerce Platform',
       tech: ['Java', 'Spring Boot', 'Angular', 'PostgreSQL','JWT'],
       description: 'JWT-based authentication, admin dashboard, 10k+ mock transactions.',
       link: 'https://github.com/FnuPratichi/Full-Stack-E-Commerce-Platform-using-Spring-Boot',
-      images: ['/featured.png', '/product_home.png'],
+      images: [process.env.PUBLIC_URL +'/featured.png', process.env.PUBLIC_URL +'/product_home.png'],
     },
     {
       title: 'RAG-based Chatbot using LangChain and AstraDB',
@@ -47,7 +48,7 @@ const Projects = () => {
       description:
         'Built a Retrieval-Augmented Generation chatbot for context-aware Q&A using custom documents.',
       link: 'https://github.com/FnuPratichi/RAG-based-Chatbot-using-LangChain-and-AstraDB',
-      images: ['/rag.png','/ragchatbot.png']
+      images: [process.env.PUBLIC_URL + '/rag.png',process.env.PUBLIC_URL +'/ragchatbot.png']
     },
     {
       title: 'E-Commerce User Behavior Analysis',
@@ -55,7 +56,7 @@ const Projects = () => {
       description:
         'Analyzed and visualized user behavior data to find key trends and retention insights.',
       link: 'https://github.com/FnuPratichi/E-Commerce-User-Behavior-Analysis',
-      images: ['/ecommerce_user.png','/useranalysis.png'],
+      images: [process.env.PUBLIC_URL +'/ecommerce_user.png',process.env.PUBLIC_URL +'/useranalysis.png'],
     },
     {
       title: 'Dimensionality Reduction in High-Dimensional Data',
@@ -63,7 +64,7 @@ const Projects = () => {
       description:
         'Comparative study of PCA, t-SNE, LDA, and autoencoders on high-dimensional datasets.',
       link: 'https://github.com/FnuPratichi/Dimensionality-Reduction-in-high-dimensional-data',
-      images: ['/dimension.png'],
+      images: [process.env.PUBLIC_URL +'/dimension.png'],
     },
     {
       title: 'IMDB SQL Explorer',
@@ -71,7 +72,7 @@ const Projects = () => {
       description:
         'Query and explore IMDb movie database using structured queries with Python visualization.',
       link: 'https://github.com/FnuPratichi/IMDB-SQL-Explorer',
-      images: ['/SQLimdb.png'],
+      images: [process.env.PUBLIC_URL +'/SQLimdb.png'],
     },
     {
       title: 'Covid-19 Mortality Prediction using R',
@@ -79,8 +80,9 @@ const Projects = () => {
       description:
         'Predicted mortality risk using health records and classification models in R.',
       link: 'https://github.com/FnuPratichi/Covid_19-Mortality-Prediction-using-R',
-      images: ['/corona.png'],
+      images: [process.env.PUBLIC_URL +'/corona.png'],
     },
+
     
   ];
 

@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const letters = [
   {
     id: 1,
-    title: 'Letter of Recommendation - Abdelghani Bellaachia',
+    title: 'Letter of Recommendation',
     content: `
 The George Washington University
 Department of Computer Science
