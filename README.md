@@ -7,7 +7,7 @@ It showcases projects, publications, achievements, and more.
 ## Get Started
 
 Feel free to **fork** this repository to customize and use it for your portfolio!  
-If you find this project helpful or interesting, please consider giving it a **⭐ star** — it really motivates me to keep improving it!
+If you find this project helpful or interesting, please consider giving it a **⭐ star** 
 ---
 ## How to Use
 
