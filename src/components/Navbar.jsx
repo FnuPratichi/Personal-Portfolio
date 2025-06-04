@@ -7,6 +7,7 @@ const Navbar = () => {
 
   const navItems = [
       { id: 'about', label: 'About' },
+      { id: 'education', label: 'Education' },
       { id: 'journey', label: 'Journey' },
       { id: 'projects', label: 'Projects' },
       { id: 'blogs', label: 'Blogs' }, 

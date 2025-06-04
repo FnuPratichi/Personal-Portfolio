@@ -3,7 +3,8 @@ import { motion } from 'framer-motion';
 
 const experiences = [
   {
-    company: 'ICPC Foundation (Remote, USA)',
+    company: 'ICPC Foundation',
+    location: 'Remote, USA',
     role: 'Intern',
     period: 'May 2025 – Present',
     description: [
@@ -13,8 +14,9 @@ const experiences = [
     ],
   },
   {
-    company: 'Transportation Data Science Project Community (Remote, USA)',
-    role: 'Data Science Researcher',
+    company: 'Northeast Big Data Innovation Hub',
+    location: 'Remote, USA',
+    role: 'Data Science Researcher (TDSP Program - Volunteer)',
     period: 'October 2024 – January 2025',
     description: [
       'Preprocessed and transformed large-scale NYC crash datasets (2012–2024)',
@@ -24,24 +26,31 @@ const experiences = [
     certificate: 'https://drive.google.com/file/d/1xtM1SDSHj4rJB5k5XMIDjTGgJhgNRXvH/view?usp=drive_link',
   },
   {
-    company: 'Amdocs Development Centre India LLP – Pune, India',
-    client: 'Comcast Client',
-    role: 'Experienced Software Engineer',
-    period: 'May 2022 – October 2022',
-    description: [
-      'Enhanced backend data migration accuracy by 40% through optimized SQL validation',
-      'Developed automation scripts integrated with Jenkins CI/CD, reducing test time by 50%',
-      'Led DevOps pipeline improvements enabling 30% faster and more stable deployments',
-    ],
-  },
-  {
-    company: 'Amdocs Development Centre India LLP – Comcast Client',
-    role: 'Software Engineer',
-    period: 'December 2020 – May 2022',
-    description: [
-      'Tested telecom OSS/BSS features, improving defect identification by 20%',
-      'Automated SQL-based data verification to prevent post-release issues',
-      'Supported CI/CD workflows, increasing system uptime and stability',
+    company: (
+      <>
+        <strong>Amdocs</strong> Development Centre India LLP
+      </>
+    ),
+    location: 'Pune, India',
+    roles: [
+      {
+        title: 'Experienced Software Engineer',
+        date: 'May 2022 – October 2022',
+        bullets: [
+          'Enhanced backend data migration accuracy by 40% through optimized SQL validation',
+          'Developed automation scripts integrated with Jenkins CI/CD, reducing test time by 50%',
+          'Led DevOps pipeline improvements enabling 30% faster and more stable deployments',
+        ],
+      },
+      {
+        title: 'Software Engineer',
+        date: 'December 2020 – May 2022',
+        bullets: [
+          'Tested telecom OSS/BSS features, improving defect identification by 20%',
+          'Automated SQL-based data verification to prevent post-release issues',
+          'Supported CI/CD workflows, increasing system uptime and stability',
+        ],
+      },
     ],
   },
 ];
@@ -80,64 +89,10 @@ const Journey = () => {
       <br></br>
       <br></br>
 
-     
-      <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-20 tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 via-amber-400 to-yellow-500 animate-glow drop-shadow-lg">
-  🎓 My Education
-</h2>
-
-<div className="max-w-5xl mx-auto px-4 space-y-14">
-  {/* GWU */}
-  <motion.div
-    initial={{ opacity: 0, y: 30 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.8 }}
-    className="bg-neutral-900 rounded-3xl shadow-2xl p-6 md:p-10 border border-neutral-800 hover:shadow-yellow-500/20 transition-shadow"
-  >
-    <div className="flex flex-col md:flex-row md:items-center justify-between mb-3 gap-1">
-      <h3 className="text-2xl md:text-3xl font-bold text-white">
-        George Washington University
-      </h3>
-      <div className="text-sm text-neutral-400 text-right">
-        <p>Washington, DC, USA</p>
-        <p className="text-xs">Jan 2024 – May 2025</p>
-      </div>
-    </div>
-    <p className="text-base text-indigo-300 mb-2 font-semibold">
-      Master's in Computer Science <span className="text-sm text-neutral-400">| GPA: 3.77 / 4.0</span>
-    </p>
-    <p className="text-base text-amber-300 font-medium mb-2">🎖️ SEAS Merit Award Recipient</p>
-    <p className="text-sm text-emerald-200 leading-relaxed">
-      <span className="font-semibold text-white">Relevant Courses:</span> Design & Analysis of Algorithms, Computer System Architecture, Machine Learning, Data Mining, Cloud Computing, DBMS, Advanced DBMS, Advanced Software Paradigms
-    </p>
-  </motion.div>
-
-  {/* Pune University */}
-  <motion.div
-    initial={{ opacity: 0, y: 30 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.8, delay: 0.2 }}
-    className="bg-neutral-900 rounded-3xl shadow-2xl p-6 md:p-10 border border-neutral-800 hover:shadow-yellow-500/20 transition-shadow"
-  >
-    <div className="flex flex-col md:flex-row md:items-center justify-between mb-3 gap-1">
-      <h3 className="text-2xl md:text-3xl font-bold text-white">
-        Savitribai Phule Pune University
-      </h3>
-      <div className="text-sm text-neutral-400 text-right">
-        <p>Pune, India</p>
-        <p className="text-xs">June 2016 – Oct 2020</p>
-      </div>
-    </div>
-    <p className="text-base text-indigo-300 mb-2 font-semibold">
-      Bachelor's in Computer Science <span className="text-sm text-neutral-400">| GPA: 8.71 / 10</span>
-    </p>
-    <p className="text-sm text-emerald-200 leading-relaxed">
-      <span className="font-semibold text-white">Relevant Courses:</span> Data Structures, Algorithms, OOPs, Artificial Intelligence, Statistics & Calculus, Discrete Mathematics, Computer Networks, Software Engineering, Web Technology
-    </p>
-  </motion.div>
-</div>
+      
 
 
-      {/* ⚙️ Work Experience Section */}
+      {/* Experience Section */}
       <section
         id="journey"
         className="py-20 bg-gradient-to-br from-gray-900 via-slate-900 to-black text-emerald-300 font-mono"
@@ -161,25 +116,71 @@ const Journey = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.25 }}
               >
-                <div className="absolute w-4 h-4 bg-gradient-to-br from-sky-300 to-emerald-500 shadow-lg rounded-full -left-2 top-2 group-hover:scale-110 transition-transform"></div>
-                <h3 className="text-2xl font-semibold text-white group-hover:text-sky-300 transition-colors">
-                  {exp.role}
-                </h3>
-                <p className="text-sm italic text-sky-400 mb-1">{exp.company}</p>
-                <p className="text-sm text-indigo-400 mb-3">{exp.period}</p>
-                <ul className="list-disc pl-6 space-y-1 text-emerald-200 mb-2">
-                  {exp.description.map((line, i) => (
-                    <li key={i} className="hover:text-indigo-300 transition-all duration-200">
-                      {line}
-                    </li>
-                  ))}
-                </ul>
+                <div className="absolute w-4 h-4 bg-gradient-to-br from-sky-300 to-emerald-500 shadow-lg rounded-full -left-2 top-2 group-hover:scale-110 transition-transform" />
+
+                {/* Line: Company | Location */}
+                <p className="text-2xl font-bold text-white group-hover:text-sky-300 transition-colors mb-1">
+                  {exp.company}{' '}
+                  <span className="text-sm text-sky-400 font-medium ml-2">
+                    | {exp.location}
+                  </span>
+                </p>
+
+                {/* Line: Role | Period */}
+                {exp.role && (
+                  <p className="text-base md:text-lg font-semibold text-indigo-300 mb-2">
+                    {exp.role}{' '}
+                    <span className="text-sm text-sky-400 font-normal ml-2">
+                      | {exp.period}
+                    </span>
+                  </p>
+                )}
+
+                {/* Standard experience bullets */}
+                {exp.description && (
+                  <ul className="list-disc pl-6 space-y-1 text-emerald-200 mb-2">
+                    {exp.description.map((line, i) => (
+                      <li
+                        key={i}
+                        className="hover:text-indigo-300 transition-all duration-200"
+                        dangerouslySetInnerHTML={{ __html: line }}
+                      />
+                    ))}
+                  </ul>
+                )}
+
+                {/* Multi-role case */}
+                {exp.roles && (
+                  <div className="space-y-5 mt-2">
+                    {exp.roles.map((role, rIndex) => (
+                      <div key={rIndex}>
+                        <p className="text-base md:text-lg font-semibold text-indigo-300">
+                          {role.title}{' '}
+                          <span className="text-sm text-sky-400 font-normal ml-2">
+                            | {role.date}
+                          </span>
+                        </p>
+                        <ul className="list-disc pl-6 space-y-1 text-emerald-200 mt-1">
+                          {role.bullets.map((bullet, bIndex) => (
+                            <li
+                              key={bIndex}
+                              className="hover:text-indigo-300 transition-all duration-200"
+                              dangerouslySetInnerHTML={{ __html: bullet }}
+                            />
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                {/* Optional certificate link */}
                 {exp.certificate && (
                   <a
                     href={exp.certificate}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm text-sky-300 hover:text-indigo-400 underline"
+                    className="text-sm text-sky-300 hover:text-indigo-400 underline mt-2 inline-block"
                   >
                     📄 View Certificate
                   </a>

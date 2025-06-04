@@ -18,21 +18,6 @@ const certifications = [
     link: "https://www.udemy.com/certificate/UC-6359e3f1-95ed-4873-9fbd-face459c0f3d/",
   },
   {
-    title: "HackerRank SQL (Basic)",
-    issuer: "HackerRank",
-    year: "Jan 2025",
-    image: "/SQLBasic.png",
-    link: "https://www.hackerrank.com/certificates/d81588fc0c3a",
-  },
-  {
-    title: "HackerRank SQL (Intermediate)",
-    issuer: "HackerRank",
-    year: "Jan 2025",
-    image: "/SQL Intermediate.png",
-    link: "https://www.hackerrank.com/certificates/88d9db66b560",
-  },
-
-  {
     title: "AWS Academy Machine Learning Foundations",
     issuer: "Amazon Web Services (AWS)",
     year: "Jul 2024",
@@ -45,6 +30,20 @@ const certifications = [
     year: "May 2024",
     skills: "AWS Cloud · AWS Core Services · AWS Architecture · AWS Pricing",
     link: "https://www.credly.com/badges/63248c3d-f61a-4863-8cea-c9b01939a67c/",
+  },
+  {
+    title: "HackerRank SQL (Basic)",
+    issuer: "HackerRank",
+    year: "Jan 2025",
+    image: "/SQLBasic.png",
+    link: "https://www.hackerrank.com/certificates/d81588fc0c3a",
+  },
+  {
+    title: "HackerRank SQL (Intermediate)",
+    issuer: "HackerRank",
+    year: "Jan 2025",
+    image: "/SQL Intermediate.png",
+    link: "https://www.hackerrank.com/certificates/88d9db66b560",
   },
 ];
 

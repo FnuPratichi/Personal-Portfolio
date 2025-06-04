@@ -6,18 +6,11 @@ const Projects = () => {
 
   const projectList = [
     {
-      title: 'Real-Time Chat Application',
+      title: 'Real-Time Mutli  Chat App Server',
       tech: ['React.js', 'Node.js', 'MongoDB', 'Socket.io', 'JWT', 'Redux'],
       description: 'Built a secure chat app with encrypted messaging, media upload, and online status.',
       videoEmbedId: '1WRpuoJyzMzqjmWUzUjMMW50ic80OpDLo',
       link: 'https://drive.google.com/file/d/1WRpuoJyzMzqjmWUzUjMMW50ic80OpDLo/view',
-    },
-    {
-      title: 'Admin-Student Management System',
-      tech: ['Python','Flask', 'Docker', 'AWS', 'PostgreSQL','CI/CD'],
-      description: 'Role-based admin/student platform with Flask API and CI/CD on AWS.',
-      videoEmbedId: '1gQp89QeTFFnt53DU6_wp3h_2lQwUn1Zg',
-      link: 'https://drive.google.com/file/d/1gQp89QeTFFnt53DU6_wp3h_2lQwUn1Zg/view',
     },
     {
       title: 'Movie Recommendation System',
@@ -27,7 +20,7 @@ const Projects = () => {
       link: 'https://drive.google.com/file/d/1xZlz1639uakNRlEQW08abXfkQ0W-FJWJ/view',
     },
     {
-      title: 'Distributed Event-Based Architecture in Python',
+      title: 'Distributed Event-Driven Microservices Architecture with Kafka',
       tech: ['Python', 'Kafka', 'Docker', 'Microservices'],
       description:
         'Implemented a distributed event-based architecture using Kafka and microservices for order, notification, transaction, and analytics handling.',
@@ -35,6 +28,14 @@ const Projects = () => {
       images: [process.env.PUBLIC_URL + '/event.png']
 
     },
+    {
+      title: 'Admin-Student Management System',
+      tech: ['Python','Flask', 'Docker', 'AWS', 'PostgreSQL','CI/CD'],
+      description: 'Role-based admin/student platform with Flask API and CI/CD on AWS.',
+      videoEmbedId: '1gQp89QeTFFnt53DU6_wp3h_2lQwUn1Zg',
+      link: 'https://drive.google.com/file/d/1gQp89QeTFFnt53DU6_wp3h_2lQwUn1Zg/view',
+    },
+
     {
       title: 'Full-Stack E-Commerce Platform',
       tech: ['Java', 'Spring Boot', 'Angular', 'PostgreSQL','JWT'],
@@ -105,17 +106,22 @@ const Projects = () => {
 
   return (
     <div id="projects" className="min-h-screen bg-black text-white px-4 md:px-16 py-12">
-      {/* Anime-style badge */}
-      <motion.div
-        initial={{ scale: 0.8, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ type: 'spring', stiffness: 200, damping: 10 }}
-        className="text-center mb-6"
-      >
-        <span className="inline-block px-6 py-2 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-black text-lg md:text-xl font-extrabold rounded-full shadow-lg animate-pulse">
-          🔥 30+ Projects Completed in Dev | ML | AI | Research
-        </span>
-      </motion.div>
+  <motion.div
+    initial={{ scale: 0.8, opacity: 0 }}
+    animate={{ scale: 1, opacity: 1 }}
+    transition={{ type: 'spring', stiffness: 200, damping: 10 }}
+    className="text-center mb-6"
+  >
+    <a
+      href="https://github.com/FnuPratichi"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <span className="inline-block px-6 py-2 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-black text-lg md:text-xl font-extrabold rounded-full shadow-lg animate-pulse hover:underline">
+        🔥 30+ Projects Completed in Dev | ML | AI | Research
+      </span>
+    </a>
+  </motion.div>
 
       {/* Main heading */}
       <h2 className="text-4xl font-bold text-center mb-12 text-yellow-400">
@@ -170,6 +176,8 @@ const Projects = () => {
             </div>
           </div>
         ))}
+        
+       
       </div>
     </div>
     

@@ -18,10 +18,6 @@ const achievements = [
     title: 'Barclays Tech Innovation Recognition',
     description: 'Selected among 240 students in the first year of undergrad to represent in the Barclays Innovation Program.',
   },
-  {
-    title: 'GWU Merit Award Recipient',
-    description: 'Received merit-based financial award for academic excellence during Master’s in Computer Science at George Washington University.',
-  },
   
 ];
 
